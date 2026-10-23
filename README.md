@@ -15,6 +15,8 @@ A full-stack weather application built with React, Node.js, and Express. Users c
 
 **Frontend:** React, Vite, Tailwind CSS
 
+**Mobile:** React Native, Expo
+
 **Backend:** Node.js, Express
 
 **External API:** Open-Meteo
@@ -72,3 +74,22 @@ WeatherApp/
 - Multi-day weather forecast
 - Temperature unit selection
 - Deployment to a hosting platform
+
+
+### 4. Run the mobile app (React Native + Expo)
+
+The backend must be running (step 2). Your phone and computer must be on the same Wi-Fi network.
+
+```bash
+cd mobile
+npm install
+cp .env.example .env.local
+```
+
+In `mobile/.env.local`, replace the IP with your computer's local IP address (Windows: `ipconfig`, macOS/Linux: `ifconfig` or `ip a`).
+
+```bash
+npx expo start
+```
+
+Install **Expo Go** on your phone and scan the QR code from the terminal.
